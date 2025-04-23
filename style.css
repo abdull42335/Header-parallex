@@ -6,8 +6,8 @@
   padding: 0px;
   margin: 0px;
   list-style: none;
-  /* font-family: "Bruno Ace SC", cursive; */
   font-family: "Bruno Ace SC", cursive;
+  cursor: pointer;
 }
 
 header {
@@ -15,10 +15,11 @@ header {
   background-color: rgb(34, 33, 33);
   position: sticky;
   top: 0;
-  padding: 31px;
+  padding: 28px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  box-shadow: 0 0 23px black;
 }
 nav ul {
   cursor: pointer;
@@ -26,13 +27,28 @@ nav ul {
   align-items: center;
   gap: 24px;
 }
-ul li{
+nav ul li {
   transition: all 0.3s ease;
 }
-ul li:hover{
+nav ul li:hover {
   color: #bdb02b;
   border-bottom: 3px solid #bdb02b;
 }
+button {
+  font-weight: 600;
+  border: none;
+  padding: 8px 12px;
+  background-color: #bdb02b;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+button:hover {
+  background-color: #878675;
+}
+button:active {
+  background-color: #bdb02b;
+}
+
 
 .parallex {
   height: 100vh;
@@ -40,27 +56,50 @@ ul li:hover{
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-h1 {
+.parallex h1 {
   color: white;
-  font-size: 53px;
+  font-size: 63px;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
+
 }
+
 .image1 {
-  background-image: url("https://images.unsplash.com/photo-1558985040-ed4d5029dd50?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjIzODkxNjg&ixlib=rb-1.2.1&q=80&quot");
+  background-image: url("./Desert.jpg");
 }
 .image2 {
   background-image: url("./Mountain.jpg");
 }
 .image3 {
-  background-image: url("https://images.unsplash.com/photo-1562095241-8c6714fd4178?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjIzOTA5OTg&ixlib=rb-1.2.1&q=80&quot");
+  background-image: url("./Sea.jpg");
 }
 .image4 {
-  background-image: url("https://images.unsplash.com/photo-1543722530-d2c3201371e7?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjIzOTExOTg&ixlib=rb-1.2.1&q=80&quot");
+  background-image: url("./galaxy.jpg");
 }
 .para {
-  background-color: white;
+  background-color: #ded9d9;
   padding: 38px;
+
+  box-shadow: 0 0 33px #ef6a00;
+}
+
+/* LAST FOOTER */
+.last {
+  padding: 22px;
+  background-color: rgb(39, 38, 38);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  color: white;
+}
+.last p {
+  font-size: 12px;
+}
+.last-flex ul {
+  display: flex;
+  font-size: 13px;
+  gap: 12px;
 }
